@@ -1,5 +1,5 @@
 # ettlix
-ettlix is a **E**mail **T**o **T**elegram **L**ink **E**xtractor.
+ettlix is an **E**mail **T**o **T**elegram **L**ink **E**xtractor.
 
 
 ## Features
@@ -25,6 +25,15 @@ You can modify the `run.sh` according to your needs.
 |`FILTER_HREF_1`|First link keyword to filter|verify|
 |`FILTER_HREF_2`|Second link keyword to filter|update-primary-location|
 |`BOT_MESSAGE`|Message to send along with the extracted link|🤖 Here is the link to something: |
+
+## How filtering works
+1. Only the last 10 unseen emails are processed.
+2. Emails are processed if they meet the following criteria:
+  - The email is from the specified sender (FROM).
+  - The email is addressed to the specified recipient (TO).
+  - The email's subject matches either SUBJECT_1 or SUBJECT_2.
+3. Only links that meet the following criteria will be sent to the Telegram chat:
+  - The link contains either HREF_1 or HREF_2.
 
 ## Run it
 ```
