@@ -1,5 +1,5 @@
 # ettlix
-ettlix is a **E**mail **T**o **T**elegram **L**ink **E**xtractor.
+ettlix is an **E**mail **T**o **T**elegram **L**ink **E**xtractor.
 
 
 ## Features
