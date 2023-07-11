@@ -1,5 +1,6 @@
 # ettlix
 ettlix is an **E**mail **T**o **T**elegram **L**ink **E**xtractor.
+
 ettlix extracts links from unread emails and sends them to a Telegram chat. It automates the process of filtering emails based on specific criteria such as sender, recipient, and subject, allowing users to receive relevant links directly in their Telegram chat, making it convenient for staying updated with important information and notifications without needing to manually check emails.
 
 
