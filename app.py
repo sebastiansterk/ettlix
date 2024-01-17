@@ -58,6 +58,6 @@ for email_id in email_ids:
 
                         # Initialize Telegram Bot and send message
                         bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
-                        bot.send_message(CHAT_ID, BOT_MESSAGE + link)
+                        bot.send_message(CHAT_ID, f"[{BOT_MESSAGE}]({link})", parse_mode='Markdown')
 
 mail.logout()
